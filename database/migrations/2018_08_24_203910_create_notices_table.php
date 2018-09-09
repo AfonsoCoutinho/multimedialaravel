@@ -18,7 +18,7 @@ class CreateNoticesTable extends Migration
             $table->integer('course_id')->unsigned();
             $table->string('type');
             $table->string('name');
-            $table->string('description');
+            $table->text('description');
             $table->timestamp('started_at')->nullable();
             $table->timestamp('finished_at')->nullable();
             $table->timestamps();
